@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <title>Lista de Contactos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+   </head>
+<body>
+    <h1>Lista de Contactos</h1>
+
+    <div class="content">
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" required>
+
+            <input type="hidden" id="contactId">
+
+            <button class="agregar" type="button" onclick="agregarActualizarContacto()">Agregar/Actualizar</button>
+        </form>
+
+        <div id="tableContainer">
+            <ul id="contactCardContainer"></ul>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
